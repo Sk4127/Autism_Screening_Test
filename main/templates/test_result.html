@@ -1,0 +1,50 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prediction Result</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        h1 {
+            text-align: center;
+            color: #444;
+            margin: 20px 0;
+        }
+        .container {
+            max-width: 600px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        p {
+            margin: 10px 0;
+            font-size: 16px;
+        }
+        h2 {
+            text-align: center;
+            color: #4CAF50;
+        }
+    </style>
+</head>
+<body>
+    <h1>Prediction Result</h1>
+    <div class="container">
+        <p><strong>Name:</strong> {{ user_name }}</p>
+        <p><strong>Age:</strong> {{ age }}</p>
+        <p><strong>Gender:</strong> {{ gender }}</p>
+        <p><strong>Relation to Test Taker:</strong> {{ relation }}</p>
+        <p><strong>AQ-10 Scores:</strong> {{ aq_scores }}</p>
+        <h2>{{ prediction }}</h2>
+    </div>
+</body>
+</html>
